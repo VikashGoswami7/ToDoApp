@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Vikash ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+    <div id="todoapp">
+
+        <!--========= HEADER SECTION ===========-->
+
+        <div id="header">
+
+            
+
+            <div id="username" style="text-align: center;">ToDo App</div>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                  <h2>Please enter your name:</h2>
+                  <input type="text" id="username-input" onkeydown="onkey(event)">
+                  <button id="submit-btn" >Submit</button>
+                </div>
+              </div>
+
+            <div id="inputbox">
+                <input id="input" type="text"
+                    placeholder="Enter a brief description of the task you want to add to your to-do list............."
+                    onkeydown="onkey(event)">
+            </div>
+
+           
+
+        </div>
+
+
+        <!--=========== CONTENT SECTION ===========-->
+
+
+        <div id="content">
+
+            <ul id="list">
+                <!-- <li><span class="text" style="height: 5vh;padding-top: 10px;font-size: 18px">Your's To Do
+                        List</span></li> -->
+            </ul>
+
+           
+
+            
+
+        </div>
+
+
+         <div id="submit" onclick="addtask()"><img src="./img/plus.png" alt="" class="addimg"></div>
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
